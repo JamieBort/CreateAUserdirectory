@@ -11,11 +11,11 @@ Your directory should look like the following images. Your CSS should be in a fi
 
 Index
 
-(images/9fd60d22-index.png)
+![](images/9fd60d22-index.png)
 
 A user with all their data
 
-(/Users/jamiebort/Documents/TIY/assignments/CreateAUserDirectory/images/b26bb569-user1.png)
+![test](/Users/jamiebort/Documents/TIY/assignments/CreateAUserDirectory/images/b26bb569-user1.png)
 
 A user looking for work
 
