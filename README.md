@@ -15,12 +15,12 @@ Index
 
 A user with all their data
 
-![test](/Users/jamiebort/Documents/TIY/assignments/CreateAUserDirectory/images/b26bb569-user1.png)
+![test](/images/b26bb569-user1.png)
 
 A user looking for work
 
-(images/1f84485d-user2.png)
+![](images/1f84485d-user2.png)
 
 A user missing educational and city data
 
-(images/bd740831-user3.png)
+1[](images/bd740831-user3.png)
