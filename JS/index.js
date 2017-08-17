@@ -8,13 +8,13 @@
 // 8. listen 3000
 
 
-// ======= Require Packages =======
+//  Require Packages
 const express = require('express');
 const mustacheExpress = require('mustache-express');
 const data = require('./data.js');
 const app = express();
 
-// ======= Express app being used =======
+// Express app being used
 app.engine('mustache', mustacheExpress());
 app.set('views', '../views');
 app.set('view engine', 'mustache');
@@ -23,31 +23,35 @@ app.set('view engine', 'mustache');
 app.use(express.static('public'));
 
 // how to comment on this next line?
-app.get('/', function(require, response){
+app.get('/', function(request, response){
   response.render('home', {
     users: data.users
   })
 });
 
-// ======= Retrieving data from data.js =======
+// Retrieving data from data.js
 
-app.get('/users/:robotName', function(require, response){
-  let username = require.params.robotName;
+app.get('/:robotName', function(request, response){
+  let username = request.params.robotName;
   let robot_item = null;
   for (var i = 0; i < data.users.length; i++) {
     let item = data.users[i]
     if (item.username === username) {
+      response.render('profile',{
+        squiggle: item
+      })
       robot_item = item;
-      break;
+
     }
   }
 
-// ======= Error Message and Console.log =======
+//  Error Message and Console.log
 if (robot_item === null) {
-  req.status(404).send('The user is not found');
+  response.status(404).send('The user is not found');
   return;
   }
-response.render('Yeah!', robot_item);
+
+
 });
 
 app.listen(3000, function() {
