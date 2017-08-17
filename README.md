@@ -23,4 +23,4 @@ A user looking for work
 
 A user missing educational and city data
 
-1[](images/bd740831-user3.png)
+![](images/bd740831-user3.png)
