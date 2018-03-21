@@ -10,20 +10,20 @@
 
 <body>
   <h1>USER</h1>
-  <a href="/"><h5>home</h5></a>
+  <a href="/"><h5>HOME</h5></a>
 
   <div class="users">
-    {{#squiggle}}
+    {{#WhatIsThis}} <!––'WhatIsThis' is referenced in index.js -->
 
-      <img class="radius" src= {{avatar}}></a>
+      <img class="radius" src= {{avatar}}></a> <!––'avatar' is referenced in data.js -->
       <div class="right">
-        <h1> {{name}}</h1>
-        <p><b>Education: </b>{{university}}</p>
-        <p><b>Skills: </b>{{skills}}</p>
-        <p>{{address.community}} | {{job}}</p>
-        <p>{{email}} | {{phone}}</p>
+        <h1> {{name}}</h1> <!––'name' is referenced in data.js -->
+        <p><b>Education: </b>{{university}}</p> <!––'university' is referenced in data.js -->
+        <p><b>Skills: </b>{{skills}}</p> <!––'skills' is referenced in data.js -->
+        <p>{{address.street_name}} | {{job}}</p> <!––'address.street_name' & 'job' are referenced in data.js -->
+        <p>{{email}} | {{phone}}</p> <!––'email' is referenced in data.js -->
       </div>
-      {{/squiggle}}
+      {{/WhatIsThis}} <!––'WhatIsThis' is referenced in index.js -->
     </div>
 </body>
 </html>

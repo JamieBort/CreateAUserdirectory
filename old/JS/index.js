@@ -14,31 +14,30 @@ const mustacheExpress = require('mustache-express');
 const data = require('./data.js');
 const app = express();
 
-// Express app being used
+// Express app engine and set.
 app.engine('mustache', mustacheExpress());
 app.set('views', '../views');
 app.set('view engine', 'mustache');
 
-// how to comment on this next line?
+// Express app being used
 app.use(express.static('public'));
 
-// how to comment on this next line?
+// Express app get.
 app.get('/', function(request, response){
-  response.render('home', {
+  response.render('home', { // 'home' references home.mustache
     users: data.users
   })
 });
 
 // Retrieving data from data.js
-
 app.get('/:robotName', function(request, response){
-  let username = request.params.robotName;
-  let robot_item = null;
+  let username = request.params.robotName; // 'username' is referenced in home.mustache
+  let robot_item = null; // 'username' is referenced in home.mustache
   for (var i = 0; i < data.users.length; i++) {
     let item = data.users[i]
     if (item.username === username) {
-      response.render('profile',{
-        squiggle: item
+      response.render('profile',{ // 'profile' references profile.mustache
+      WhatIsThis: item // 'WhatIsThis' references profile.mustache
       })
       robot_item = item;
 
@@ -54,6 +53,7 @@ if (robot_item === null) {
 
 });
 
+// App listen.
 app.listen(3000, function() {
   console.log('The app is running.');
 });

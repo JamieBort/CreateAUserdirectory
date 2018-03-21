@@ -14,8 +14,8 @@
 
     {{#users}}
       <div class="profiles">
-        <img src="{{avatar}}">
-        <a href="/{{username}}"><h2>{{name}}</h2></a>
+        <img src="{{avatar}}"> <!––'avatar' is referenced in data.js -->
+        <a href="/{{username}}"><h2>{{name}}</h2></a> <!––'username' is referenced in index.js -->
         <h3>Position: {{job}}</h3>
         <h4>Company: {{company}}</h4>
       </div>

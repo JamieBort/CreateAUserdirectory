@@ -11,15 +11,33 @@
 // 7. if statement (?)
 // 8. listen 3000
 
-
 //  Require Packages
+const express = require('express')
+const app = express()
+const data = require('./data.js');
+const mustacheExpress = require('mustache-express');
 
-// Express app being used
+// Mustache-express app engine and set.
 
-// how to comment on this next line?
+// Express app being used.
+app.use(express.static('public'));
 
-// how to comment on this next line?
+// Express app get.
+app.get('/', function (req, res) {
+    res.send('Hello World')
+    res.render('home', {
+        users: data.users
+    })
+});
 
-// Retrieving data from data.js
+
+// Retrieving data from data.js for when the name of the robot is selected.
+// app.get('/:robotName', function (req, res) { // New endpoint.
+//     res.send('Hello World')
+//   });
 
 //  Error Message and Console.log
+
+
+// App listen.
+app.listen(3000, () => console.log('Example app listening on port 3000!'));
