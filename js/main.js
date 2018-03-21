@@ -2,35 +2,24 @@
 
 // The amount of info each user has varies. Users with no job or company data are currently looking for work.
 
-// We are going to require express.
-// We are going to require readline.
+// 1. determine which packages I will need.
+// 2. write lines of code for engine
+// 3. write lines of code for static
+// 4. app get #1
+// 5. app get #2
+// 6. for statement (?)
+// 7. if statement (?)
+// 8. listen 3000
 
 
-// const readline = require('readline');
+//  Require Packages
 
-// const rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// });
+// Express app being used
 
-// rl.question('What do you think of Node.js? ', (answer) => {
-//   // TODO: Log the answer in a database
-//   console.log(`Thank you for your valuable feedback: ${answer}`);
+// how to comment on this next line?
 
-//   rl.close();
-// });
+// how to comment on this next line?
 
+// Retrieving data from data.js
 
-// The following will read the 'data.js' file line by line and log it to the console:
-var readline = require('readline');
-var fs = require('fs');
-
-var myInterface = readline.createInterface({
-  input: fs.createReadStream('data.js')
-});
-
-var lineno = 0;
-myInterface.on('line', function (line) {
-  lineno++;
-  console.log('Line number ' + lineno + ': ' + line);
-});
+//  Error Message and Console.log
