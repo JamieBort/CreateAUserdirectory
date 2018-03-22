@@ -9,8 +9,8 @@
 
 
 //  Require Packages
-const express = require('express');
-const mustacheExpress = require('mustache-express');
+const express = require('express'); // express is used to 
+const mustacheExpress = require('mustache-express'); // mustache-express is used to 
 const data = require('./data.js');
 const app = express();
 
@@ -23,37 +23,52 @@ app.set('view engine', 'mustache');
 app.use(express.static('public'));
 
 // Express app get.
-app.get('/', function(request, response){
+app.get('/', function (request, response) {
   response.render('home', { // 'home' references home.mustache
     users: data.users
-  })
+      })
+      // document.getElementsByTagName("p").innerHTML = "The full URL of this page is:<br>"
+  // document.getElementById("demo").innerHTML = "The full URL of this page is:<br>";
 });
 
 // Retrieving data from data.js
-app.get('/:robotName', function(request, response){
-  let username = request.params.robotName; // 'username' is referenced in home.mustache
+app.get('/:robotName', function (request, response) { // robotName is used below by asigning it to 'username'.
+  let username = request.params.robotName; // 'username' is referenced in home.mustache.
   let robot_item = null; // 'username' is referenced in home.mustache
+  // let theURL = window.location.href;
+  // let theURL = request.params.robotName;
+  // document.getElementById("demo").innerHTML = "The full URL of this page is:<br>";
+  // document.getElementsByTagName("p").innerHTML = "The full URL of this page is:<br>"
   for (var i = 0; i < data.users.length; i++) {
     let item = data.users[i]
     if (item.username === username) {
-      response.render('profile',{ // 'profile' references profile.mustache
-      WhatIsThis: item // 'WhatIsThis' references profile.mustache
+      response.render('profile', { // 'profile' is referenced in profile.mustache
+        WhatIsThis: item // 'WhatIsThis' is referenced in profile.mustache
       })
-      robot_item = item;
-
+      robot_item = item; // asigning 'data.users[i]' to robot_item. 
     }
   }
 
-//  Error Message and Console.log
-if (robot_item === null) {
-  response.status(404).send('The user is not found');
-  return;
+  //  Error Message and Console.log
+  if (robot_item === null) {
+
+    response.status(404).send('That user is not found.');
+    // response.status(404).send('That user is not found.' + window.location.href);
+    // document.getElementById("demo").innerHTML = "The full URL of this page is: ";
+    // document.getElementsByTagName("p").innerHTML = "The full URL of this page is: "
+    // console.log(location.href);
+    // console.log("Hello");
+    // console.log(this.attr("href"));
+    // console.log(this.getAttribute('href'));
+    // console.log(window.location.pathname);
+    // console.log(window.location.href);
+    return;
   }
 
 
 });
 
 // App listen.
-app.listen(3000, function() {
-  console.log('The app is running.');
+app.listen(3000, function () {
+  console.log('The app is running at http://localhost:3000/.');
 });

@@ -1,5 +1,8 @@
 from: https://newline.theironyard.com/cohorts/15/courses/10/projects/75
 
+TODO:
+1. Add code so that the url is displayed on the page. either with innHTML and/or using window.location.href.
+
 **Create a user directory**
 Given a file of user data, create a directory of users.
 

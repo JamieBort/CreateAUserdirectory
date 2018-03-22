@@ -11,13 +11,14 @@
 <body>
   <h1>USER</h1>
   <a href="/"><h5>HOME</h5></a>
-
+<p id = "demo"></p>
   <div class="users">
     {{#WhatIsThis}} <!––'WhatIsThis' is referenced in index.js -->
-
+<p id = "demo"></p>
       <img class="radius" src= {{avatar}}></a> <!––'avatar' is referenced in data.js -->
       <div class="right">
         <h1> {{name}}</h1> <!––'name' is referenced in data.js -->
+        <!-- <h2><b>The URL: </b>{{theURL}}</h2></a> --> <!-- Not used. Inserted when trying to insert the URL. -->
         <p><b>Education: </b>{{university}}</p> <!––'university' is referenced in data.js -->
         <p><b>Skills: </b>{{skills}}</p> <!––'skills' is referenced in data.js -->
         <p>{{address.street_name}} | {{job}}</p> <!––'address.street_name' & 'job' are referenced in data.js -->
