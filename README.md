@@ -2,6 +2,8 @@ from: https://newline.theironyard.com/cohorts/15/courses/10/projects/75
 
 TODO:
 1. Add code so that the url is displayed on the page. either with innHTML and/or using window.location.href.
+2. Make the style look like the mockup.
+3. Remove the 'old' directory.
 
 **Create a user directory**
 Given a file of user data, create a directory of users.

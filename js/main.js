@@ -1,7 +1,3 @@
-// Using the attached data.js file, build an Express app that works as a directory of users in the file. You should use require to get the data from the data.js file.
-
-// The amount of info each user has varies. Users with no job or company data are currently looking for work.
-
 // 1. determine which packages I will need.
 // 2. write lines of code for engine
 // 3. write lines of code for static
@@ -11,33 +7,68 @@
 // 7. if statement (?)
 // 8. listen 3000
 
+
 //  Require Packages
-const express = require('express')
-const app = express()
+const express = require('express'); // express is used to 
+const mustacheExpress = require('mustache-express'); // mustache-express is used to 
 const data = require('./data.js');
-const mustacheExpress = require('mustache-express');
+const app = express();
 
-// Mustache-express app engine and set.
+// Express app engine and set.
+app.engine('mustache', mustacheExpress());
+app.set('views', '../views');
+app.set('view engine', 'mustache');
 
-// Express app being used.
+// Express app being used
 app.use(express.static('public'));
 
 // Express app get.
-app.get('/', function (req, res) {
-    res.send('Hello World')
-    res.render('home', {
+app.get('/', function (request, response) {
+    response.render('home', { // 'home' references home.mustache
         users: data.users
     })
+    // document.getElementsByTagName("p").innerHTML = "The full URL of this page is:<br>"
+    // document.getElementById("demo").innerHTML = "The full URL of this page is:<br>";
 });
 
+// Retrieving data from data.js
+app.get('/:robotName', function (request, response) { // robotName is used below by asigning it to 'username'.
+    let username = request.params.robotName; // 'username' is referenced in home.mustache.
+    let robot_item = null; // 'username' is referenced in home.mustache
+    // let theURL = window.location.href;
+    // let theURL = request.params.robotName;
+    // document.getElementById("demo").innerHTML = "The full URL of this page is:<br>";
+    // document.getElementsByTagName("p").innerHTML = "The full URL of this page is:<br>"
+    for (var i = 0; i < data.users.length; i++) {
+        let item = data.users[i]
+        if (item.username === username) {
+            response.render('profile', { // 'profile' is referenced in profile.mustache
+                WhatIsThis: item // 'WhatIsThis' is referenced in profile.mustache
+            })
+            robot_item = item; // asigning 'data.users[i]' to robot_item. 
+        }
+    }
 
-// Retrieving data from data.js for when the name of the robot is selected.
-// app.get('/:robotName', function (req, res) { // New endpoint.
-//     res.send('Hello World')
-//   });
+    //  Error Message and Console.log
+    if (robot_item === null) {
 
-//  Error Message and Console.log
+        response.status(404).send('That user is not found.');
+        // response.status(404).send('That user is not found.' + window.location.href);
+        // document.getElementById("demo").innerHTML = "The full URL of this page is: ";
+        // document.getElementsByTagName("p").innerHTML = "The full URL of this page is: "
+        // console.log(location.href);
+        // console.log("Hello");
+        // console.log(this.attr("href"));
+        // console.log(this.getAttribute('href'));
+        // console.log(window.location.pathname);
+        // console.log(window.location.href);
+        return;
+    }
 
+
+});
 
 // App listen.
-app.listen(3000, () => console.log('Example app listening on port 3000!'));
+app.listen(3000, function () {
+    console.log('The app is running at http://localhost:3000/.');
+});

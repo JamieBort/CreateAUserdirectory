@@ -10,12 +10,16 @@
 
 <body>
   <h1>Robot Employee Database</h1>
+  
   <div class="rows">
+  
 
     {{#users}}
+    <p id = "demo"></p>
       <div class="profiles">
-        <img src="{{avatar}}">
-        <a href="/{{username}}"><h2>{{name}}</h2></a>
+        <img src="{{avatar}}"> <!––'avatar' is referenced in data.js -->
+        <a href="/{{username}}"><h2>{{name}}</h2></a> <!––'username' is referenced from index.js -->
+        <!-- <h2><b>The URL:</b>{{theURL}}</h2></a> --> <!-- Not used. Inserted when trying to insert the URL. -->
         <h3>Position: {{job}}</h3>
         <h4>Company: {{company}}</h4>
       </div>

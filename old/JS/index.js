@@ -27,18 +27,12 @@ app.get('/', function (request, response) {
   response.render('home', { // 'home' references home.mustache
     users: data.users
       })
-      // document.getElementsByTagName("p").innerHTML = "The full URL of this page is:<br>"
-  // document.getElementById("demo").innerHTML = "The full URL of this page is:<br>";
 });
 
 // Retrieving data from data.js
 app.get('/:robotName', function (request, response) { // robotName is used below by asigning it to 'username'.
   let username = request.params.robotName; // 'username' is referenced in home.mustache.
   let robot_item = null; // 'username' is referenced in home.mustache
-  // let theURL = window.location.href;
-  // let theURL = request.params.robotName;
-  // document.getElementById("demo").innerHTML = "The full URL of this page is:<br>";
-  // document.getElementsByTagName("p").innerHTML = "The full URL of this page is:<br>"
   for (var i = 0; i < data.users.length; i++) {
     let item = data.users[i]
     if (item.username === username) {
@@ -51,21 +45,9 @@ app.get('/:robotName', function (request, response) { // robotName is used below
 
   //  Error Message and Console.log
   if (robot_item === null) {
-
     response.status(404).send('That user is not found.');
-    // response.status(404).send('That user is not found.' + window.location.href);
-    // document.getElementById("demo").innerHTML = "The full URL of this page is: ";
-    // document.getElementsByTagName("p").innerHTML = "The full URL of this page is: "
-    // console.log(location.href);
-    // console.log("Hello");
-    // console.log(this.attr("href"));
-    // console.log(this.getAttribute('href'));
-    // console.log(window.location.pathname);
-    // console.log(window.location.href);
     return;
   }
-
-
 });
 
 // App listen.
