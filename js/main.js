@@ -9,8 +9,8 @@
 
 
 //  Require Packages
-const express = require('express'); // express is used to 
-const mustacheExpress = require('mustache-express'); // mustache-express is used to 
+const express = require('express'); // express is a light-weight web application framework to help organize your web application into an MVC architecture.
+const mustacheExpress = require('mustache-express'); // mustache-express is a template engine that allows us to use the files in the 'view' directory.
 const data = require('./data.js');
 const app = express();
 
