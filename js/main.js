@@ -32,6 +32,7 @@ app.get('/', function (request, response) {
 });
 
 // Retrieving data from data.js
+// This video explains how 'robotName' below works: https://www.youtube.com/watch?v=oZGmHNZv7Sc
 app.get('/:robotName', function (request, response) { // robotName is used below by asigning it to 'username'.
     let username = request.params.robotName; // 'username' is referenced in home.mustache.
     let robot_item = null; // 'username' is referenced in home.mustache

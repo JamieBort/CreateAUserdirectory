@@ -1,7 +1,7 @@
 from: https://newline.theironyard.com/cohorts/15/courses/10/projects/75
 
 TODO:
-1. Add code so that the url is displayed on the page. either with innHTML and/or using window.location.href.
+1. Add code so that the url is displayed on the page; either with innHTML and/or using window.location.href. See https://www.youtube.com/watch?v=oZGmHNZv7Sc to accomplish that.
 2. Come back to identify what is the model, what is the view, and what is the controllor.
 3. Make the style look like the mockup.
 4. Remove the 'old' directory.
