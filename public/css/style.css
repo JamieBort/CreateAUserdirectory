@@ -16,7 +16,7 @@ h1 {
 }
 
 .rows {
-    border: .1em solid blue;
+    /* border: .1em solid blue; */
     width: 75em;
     display: flex;
     flex-wrap: wrap;
@@ -27,9 +27,9 @@ h1 {
 }
 
 .profiles {
+    border: .05em solid gray;
     margin: 1em;
     /* margin: auto; */
-    border: .1em solid black;
     width: 20%;
     height: auto;
     /* display: inline; */ /* Very bad. */
@@ -40,14 +40,14 @@ h1 {
     flex-direction: column;
 }
 img {
-    border: .1em solid green;
+    /* border: .1em solid green; */
     margin: .5em auto;
     width: 50%;
     height: auto;
 }
 
 h2, h3, h4 {
-    border: .1em solid gold;
+    /* border: .1em solid gold; */
     padding: .25em 0 .25em 1em;
     margin: 0 0 0 0;
     width: 90%;
@@ -80,7 +80,7 @@ h1 {
 }
 
 .profiles {
-    border: .1em solid black;
+    /* border: .1em solid black; */
     /* width: 40em; */
     /* height: 20em; */
 }
