@@ -70,6 +70,6 @@ app.get('/:robotName', function (request, response) { // robotName is used below
 });
 
 // App listen.
-app.listen(5000, function () {
+app.listen(process.env.PORT || 5000, function () {
     console.log('The app is running at http://localhost:5000/.');
 });
