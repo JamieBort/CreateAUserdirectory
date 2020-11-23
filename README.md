@@ -1,4 +1,6 @@
-from: https://newline.theironyard.com/cohorts/15/courses/10/projects/75
+# Create a User Directory
+
+From [The Iron Yard](https://newline.theironyard.com/cohorts/15/courses/10/projects/75)
 
 TODO:
 1. Add code so that the url is displayed on the page; either with innHTML and/or using window.location.href. See https://www.youtube.com/watch?v=oZGmHNZv7Sc to accomplish that.
@@ -31,3 +33,5 @@ A user looking for work
 A user missing educational and city data
 
 ![](images/bd740831-user3.png)
+
+To use this repo
