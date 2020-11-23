@@ -4,6 +4,7 @@
   "description": "From [The Iron Yard](https://newline.theironyard.com/cohorts/15/courses/10/projects/75)",
   "main": "main.js",
   "scripts": {
+    "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
