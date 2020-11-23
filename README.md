@@ -34,4 +34,10 @@ A user missing educational and city data
 
 ![](images/bd740831-user3.png)
 
-To use this repo
+---
+Note, following the instructions in the [How to Run a Simple HTML/CSS/Javascript Application on Heroku](https://medium.com/@winnieliang/how-to-run-a-simple-html-css-javascript-application-on-heroku-4e664c541b0b) article I created the composer.json and the index.php files for the sole purpose of being able to deploy this to Heroku.
+
+---
+To use this repo.
+In Terminal in the root directory run `npm install`.
+Then run `nodemon main.js`.
