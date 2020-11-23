@@ -70,6 +70,6 @@ app.get('/:robotName', function (request, response) { // robotName is used below
 });
 
 // App listen.
-app.listen(3000, function () {
-    console.log('The app is running at http://localhost:3000/.');
+app.listen(5000, function () {
+    console.log('The app is running at http://localhost:5000/.');
 });
