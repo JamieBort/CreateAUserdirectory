@@ -1,5 +1,7 @@
 /* Designed for desktop */
 body {
+    /* border: .05em solid orange; */
+    /* width: 100%; */
     /* display: flex;
     flex-direction: column;
     align-items: center; */
@@ -13,25 +15,35 @@ h1 {
 }
 
 .rows {
-    /* width: 75em;
+    /* border: .05em solid black; */
+    margin:.5em;
+
+    /* width: 75em; */
+    /* width: 100em; */
+    /* width: 40em; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; */
+    justify-content: space-around;
 
     /* border: .1em solid blue; */
 
     /* justify-content: space-between; */
     /* align-items: center; */
     /* margin: auto; */
+    
 }
 
 .profiles {
     border: .05em solid gray;
-    /* margin: 1em;
-    width: 20%;
-    height: auto;
+    margin: .75em;
+    /* max-width: 200em; */
+    /* width: 20%; */
+    width: 15em;
+    /* height: auto; */
     display: flex;
-    flex-direction: column; */
+    flex-direction: column;
+    padding:.5em;
+    border-radius: 1em;
 
     /* margin: auto; */
     
@@ -42,12 +54,29 @@ h1 {
     /* justify-content: center; */
     
 }
+.profile_img{
+    /* border: .05em solid gray;
+    margin:.5em; */
+}
+
+.profile_a{
+    /* border: .05em solid gray;
+    margin:.5em; */
+    text-align: center;
+}
+
+.profile_span{
+    /* border: .05em solid gray;
+    margin:.5em; */
+    text-align: center;
+}
+
 img {
     /* border: .1em solid green; */
 
-    /* margin: .5em auto;
-    width: 50%;
-    height: auto; */
+    /* margin: 0em auto; */
+    /* width: 50%; */
+    /* height: auto; */
 }
 
 h2, h3, h4 {
@@ -69,6 +98,68 @@ h2 {
 h3, h4 {
     /* font-size: .75em; */
 }
+
+.home_a{
+    /* border: .05em solid black; */
+    margin:.5em;
+}
+
+.users_outer_div{
+    border: .05em solid black;
+    margin:.5em auto;
+    max-width: 80%;
+    border-radius: 3em;
+}
+
+.user_img, .users_inner_div, .user_name, .user_p {
+    margin:.5em auto;
+    max-width: 50%;
+}
+
+.user_img{
+    /* border: .05em solid red; */
+    
+    margin:.5em auto;
+    display: block;
+
+    /* margin:.5em auto; */
+    /* max-width: 80%; */
+
+
+  
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* width: 50%; */
+}
+
+.users_inner_div{
+    /* border: .05em solid rebeccapurple; */
+
+    /* margin:.5em; */
+    /* margin:.5em auto;
+    max-width: 60%; */
+}
+
+.user_name{
+    /* border: .05em solid royalblue; */
+
+    /* margin:.5em; */
+    /* margin:.5em auto;
+    max-width: 60%; */
+}
+
+.user_p{
+    /* border: .05em solid palevioletred; */
+
+    /* margin:.5em; */
+    /* margin:.5em auto;
+    max-width: 60%; */
+}
+
+
+
+
+
 
 /* Designed for mobile */
 
