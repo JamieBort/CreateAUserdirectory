@@ -16,11 +16,11 @@ const app = express();
 
 // Express app engine and set.
 app.engine('mustache', mustacheExpress());
-app.set('views', '../views');
+app.set('views', 'views');
 app.set('view engine', 'mustache');
 
 // Express app being used
-app.use(express.static('../public'));
+app.use(express.static('public'));
 
 // Express app get.
 app.get('/', function (request, response) {
