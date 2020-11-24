@@ -16,11 +16,11 @@ const app = express();
 
 // Express app engine and set.
 app.engine('mustache', mustacheExpress());
-app.set('views', '../views');
+app.set('views', './views');
 app.set('view engine', 'mustache');
 
 // Express app being used
-app.use(express.static('../public'));
+app.use(express.static('public'));
 
 // Express app get.
 app.get('/', function (request, response) {
@@ -70,7 +70,6 @@ app.get('/:robotName', function (request, response) { // robotName is used below
 });
 
 // App listen.
-// app.listen(3000, function () {
-app.listen(process.env.PORT || 5000, function () {
-    console.log('The app is running at http://localhost:5000/.');
-});
+// app.listen(process.env.PORT || 5000, function () {
+//     console.log('The app is running at http://localhost:5000/.');
+// });
