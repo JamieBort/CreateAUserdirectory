@@ -222,7 +222,8 @@ h1 {}
 }
 
 
-.home_a{}
+.home_a{
+    font-size: 2em;}
 
 .users_outer_div{}
 
@@ -234,5 +235,8 @@ h1 {}
 
 .user_name{}
 
-.user_p{}
+.user_p{
+    font-size: 2em;
+}
+
 }
