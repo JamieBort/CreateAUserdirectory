@@ -24,9 +24,22 @@ app.use(express.static('public'));
 
 // Express app get.
 app.get('/', function (request, response) {
+    for (var i = 0; i < data.users.length; i++) {
+        if(data.users[i].job==null){
+            data.users[i].job="Available for hire.";
+            data.users[i].company="Available for hire."
+        };
+    }
+    
     response.render('home', { // 'home' references home.mustache
-        users: data.users
+    
+    users: data.users,
+    // data.users[1].job="worker",
+    
+        
     })
+    
+
     // document.getElementsByTagName("p").innerHTML = "The full URL of this page is:<br>"
     // document.getElementById("demo").innerHTML = "The full URL of this page is:<br>";
 });
@@ -35,13 +48,21 @@ app.get('/', function (request, response) {
 // This video explains how 'robotName' below works: https://www.youtube.com/watch?v=oZGmHNZv7Sc
 app.get('/:robotName', function (request, response) { // robotName is used below by asigning it to 'username'.
     let username = request.params.robotName; // 'username' is referenced in home.mustache.
+    // console.log("the username");
+    // console.log(username);
     let robot_item = null; // 'username' is referenced in home.mustache
     // let theURL = window.location.href;
     // let theURL = request.params.robotName;
     // document.getElementById("demo").innerHTML = "The full URL of this page is:<br>";
     // document.getElementsByTagName("p").innerHTML = "The full URL of this page is:<br>"
     for (var i = 0; i < data.users.length; i++) {
-        let item = data.users[i]
+        let item = data.users[i];
+
+        // console.log(item.job);
+        // if(item.job == null) {console.log(item);} // Isolated the jobs that are not filled.
+        // console.log(item);
+        // console.log(item.job);
+        
         if (item.username === username) {
             response.render('profile', { // 'profile' is referenced in profile.mustache
                 WhatIsThis: item // 'WhatIsThis' is referenced in profile.mustache
@@ -69,6 +90,7 @@ app.get('/:robotName', function (request, response) { // robotName is used below
 
 });
 
+// Changed from 3000 to 5000 so that I could run this on Heroku.
 // App listen.
 // app.listen(3000, function () {
 app.listen(process.env.PORT || 5000, function () {
