@@ -1,16 +1,6 @@
-// 1. determine which packages I will need.
-// 2. write lines of code for engine
-// 3. write lines of code for static
-// 4. app get #1
-// 5. app get #2
-// 6. for statement (?)
-// 7. if statement (?)
-// 8. listen 3000
-
-
 //  Require Packages
-const express = require('express'); // express is a light-weight web application framework to help organize your web application into an MVC architecture.
-const mustacheExpress = require('mustache-express'); // mustache-express is a template engine that allows us to use the files in the 'view' directory.
+const express = require('express');
+const mustacheExpress = require('mustache-express');
 const data = require('./data.js');
 const app = express();
 
@@ -24,17 +14,40 @@ app.use(express.static('public'));
 
 // Express app get.
 app.get('/', function (request, response) {
+    var status = "Employed"
+    var can_see_ternary=false;
+    var available = "no message"
+
+    console.log(data.users[1].id);
+    console.log(data.users[1].job);
+    console.log(data.users[2].id);
+    console.log(data.users[2].job);
+
     for (var i = 0; i < data.users.length; i++) {
         if(data.users[i].job==null){
             data.users[i].job="Available for hire.";
-            data.users[i].company="Available for hire."
+            data.users[i].company="Available for hire.";
+            status = "Now available"
         };
-    }
+        // console.log(data.users[i].id);
+        // console.log(data.users[i].job);
+        // console.log(data.users[i].company);
+        
+    };
+    console.log(data.users[1].id);
+    console.log(data.users[1].job);
+    console.log(data.users[2].id);
+    console.log(data.users[2].job);
+
+    response.render('home', { 
     
-    response.render('home', { // 'home' references home.mustache
-    
-    users: data.users,
-    // data.users[1].job="worker",
+    // users: data.users,
+    users_data: data.users,
+
+    can_see_toggle_first:can_see_ternary ? "hidden" : "",
+    can_see_toggle_second:can_see_ternary ? "" : "hidden",
+    status:status,
+    available:status,
     
         
     })
@@ -64,11 +77,30 @@ app.get('/:robotName', function (request, response) { // robotName is used below
         // console.log(item.job);
         
         if (item.username === username) {
-            response.render('profile', { // 'profile' is referenced in profile.mustache
+            // if(item.username==data.users[i].username){console.log(data.users[i].job);}
+            // console.log(item.username);
+            // console.log(data.users[i].username);
+            // console.log(item.job);
+            if(item.job == "Available for hire."||item.job == null){
+                // console.log("it is null");
+                // console.log(item.job);
+                    response.render('profile_available', { // 'profile' is referenced in profile.mustache
+                        WhatIsThis: item // 'WhatIsThis' is referenced in profile.mustache
+                    })
+                    robot_item = item; // asigning 'data.users[i]' to robot_item. 
+
+            }
+            else{
+                // console.log(item.job);
+                response.render('profile', { // 'profile' is referenced in profile.mustache
                 WhatIsThis: item // 'WhatIsThis' is referenced in profile.mustache
-            })
-            robot_item = item; // asigning 'data.users[i]' to robot_item. 
+                })
+            robot_item = item; // asigning 'data.users[i]' to robot_item.
+            }
+
+             
         }
+        
     }
 
     //  Error Message and Console.log

@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <title>Index</title>
   <link type="text/css" rel="stylesheet" href="/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> --> <!-- Commented out for now - receiving error in console. -->
 </head>
 
 <body>
-  <h1>Robot Employee Database</h1>
+  <h1 class="home_page_title">Robot Employee Database</h1>
   
   <div class="rows">
-    {{#users}}
+    {{#users_data}}
     
       <div class="profiles">
         <img class="profile_img" src="{{avatar}}">
@@ -21,8 +21,22 @@
         <span class="profile_span" >Position: {{job}}</span>
         <span class="profile_span" >Company: {{company}}</span>
       </div>
+    
+    <!-- The below is commented out. The intent with the below div is to replace the div above. I was trying to pass 'hidden' in for the toggle so that either can_see_toggle_first would display. OR can_see_toggle_second would display. Depending on whether 'data.users[i].job==null' in main.js was true. -->
+     <!--  <div class="profiles">
+          <img class="profile_img" src="{{avatar}}">
+          <a class="profile_a" href="/{{username}}">{{name}}</a>
+          <div {{can_see_toggle_first}} >
+            <span class="profile_span" >Status: {{status}}</span>
+            <span class="profile_span" >Position: {{job}}</span>
+            <span class="profile_span" >Company: {{company}}</span>
+          </div>
+          <div {{can_see_toggle_second}} >
+            <span class="profile_span" >{{available}}</span>
+          </div>
+      </div> -->
       
-    {{/users}}
+    {{/users_data}}
   </div>
 
 </body>
