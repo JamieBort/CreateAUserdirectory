@@ -3,11 +3,18 @@
 From [The Iron Yard](https://newline.theironyard.com/cohorts/15/courses/10/projects/75)
 
 TODO:
-1. Add code so that the url is displayed on the page; either with innHTML and/or using window.location.href. See https://www.youtube.com/watch?v=oZGmHNZv7Sc to accomplish that.
-2. Come back to identify what is the model, what is the view, and what is the controllor.
-3. Make the style look like the mockup.
-4. Remove the 'old' directory.
-5. Update gh-pages.
+- [ ] 1. Add code so that the url is displayed on the page; either with innerHTML and/or using window.location.href. See the [Node JS Tutorial for Beginners #25 - Template Engines](https://www.youtube.com/watch?v=oZGmHNZv7Sc) YouTube video to accomplish that.
+- [ ] 2. Come back to identify what is the model, what is the view, and what is the controllor.
+- [ ] 3. Make the style look like the mockup.
+ - [ ] 3a. The "Available for hire" needs to be in red.
+ - [ ] 3b. The way the skills are listed do not match the way they're listed in the mockup.
+ - [ ] 3c. The mobile version of the profile page doesn't match the mockup. make the mobile version match the mockup. Among the changes that are needed are the font size. 
+ - [ ] 3d. The mobile version of the home page doesn't exist. Make the mobile version of the home page.mustache, and the /views/profile.mustache files.
+- [ ] 4. Clean up the comments and unneeded code.
+- [ ] 5. Clean up the /public/css/style.css file.
+- [ ] 6. Remove the /public/css/copy_style.css, /views/copy_profile.mustache, /views/copy_profile_available.
+- [X] 7. Remove the 'old' directory.
+- [ ] 8. Update gh-pages.
 
 **Create a user directory**
 Given a file of user data, create a directory of users.
