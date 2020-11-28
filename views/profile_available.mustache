@@ -9,21 +9,31 @@
 </head>
 
 <body>
-  <h1>Available USER - style this appropriately</h1>
+  <h1 class="user_page_title">USER</h1>
   <a class="home_a" href="/">Return to Home Page</a>
   <div class="users_outer_div users">
     {{#WhatIsThis}}
-    <img class="user_img radius" src= {{avatar}}></a>
-    <!-- <div class="users_inner_div right"> -->
-    <h1 class="user_name"> {{name}}</h1>
-          <!-- <h2><b>The URL: </b>{{theURL}}</h2></a> --> <!-- Not used. Inserted when trying to insert the URL. -->
-    <p class="user_p" ><b>Education: </b>
-        {{university}}</p>
-    <p class="user_p" ><b>Skills: </b>
-        {{skills}}</p>
-    <p class="user_p" >{{address.street_name}} | {{job}}</p>
-    <p class="user_p" >{{email}} | {{phone}}</p>
+
+    <div class="user_top_div">
+      <img class="user_img radius" src= {{avatar}}>
+      <span class="user_span">
+        <h2 class="user_name"> {{name}}</h2>
+        <p class="user_p" >{{address.street_name}} | {{job}}</p>
+        <p class="user_p" >{{email}} | {{phone}}</p>
+      </span>
     </div>
+    <div class="user_bottom_div">
+      <div class="top_div">
+        <p class="user_p left_p" ><b>Education: </b></p>
+        <p class="user_p right_p" >{{university}}</p>
+      </div>
+      <div class="bottom_div">
+        <p class="user_p left_p" ><b>Skills: </b></p>
+        <p class="user_p right_p" >{{skills}}</p>
+      </div>
+        
+    </div>
+
       {{/WhatIsThis}}
   </div>
 </body>

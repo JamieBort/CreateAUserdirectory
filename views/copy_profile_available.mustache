@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>USER</title>
+  <link type="text/css" rel="stylesheet" href="/css/style.css">
+  <!-- <link href="https://googleapis.com/css?family+Roboto" rel="stylesheet"> --> <!-- Commented out for now - receiving error in console. -->
+</head>
+
+<body>
+  <h1>Available USER - style this appropriately</h1>
+  <a class="home_a" href="/">Return to Home Page</a>
+  <div class="users_outer_div users">
+    {{#WhatIsThis}}
+    <img class="user_img radius" src= {{avatar}}></a>
+    <!-- <div class="users_inner_div right"> -->
+    <h1 class="user_name"> {{name}}</h1>
+          <!-- <h2><b>The URL: </b>{{theURL}}</h2></a> --> <!-- Not used. Inserted when trying to insert the URL. -->
+    <p class="user_p" ><b>Education: </b>
+        {{university}}</p>
+    <p class="user_p" ><b>Skills: </b>
+        {{skills}}</p>
+    <p class="user_p" >{{address.street_name}} | {{job}}</p>
+    <p class="user_p" >{{email}} | {{phone}}</p>
+    </div>
+      {{/WhatIsThis}}
+  </div>
+</body>
+</html>

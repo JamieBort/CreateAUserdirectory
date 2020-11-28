@@ -15,43 +15,43 @@ app.use(express.static('public'));
 // Express app get.
 app.get('/', function (request, response) {
     var status = "Employed"
-    var can_see_ternary=false;
+    var can_see_ternary = false;
     var available = "no message"
 
-    console.log(data.users[1].id);
-    console.log(data.users[1].job);
-    console.log(data.users[2].id);
-    console.log(data.users[2].job);
+    // console.log(data.users[1].id);
+    // console.log(data.users[1].job);
+    // console.log(data.users[2].id);
+    // console.log(data.users[2].job);
 
     for (var i = 0; i < data.users.length; i++) {
-        if(data.users[i].job==null){
-            data.users[i].job="Available for hire.";
-            data.users[i].company="Available for hire.";
+        if (data.users[i].job == null) {
+            data.users[i].job = "Available for hire.";
+            data.users[i].company = "Available for hire.";
             status = "Now available"
         };
         // console.log(data.users[i].id);
         // console.log(data.users[i].job);
         // console.log(data.users[i].company);
-        
+
     };
-    console.log(data.users[1].id);
-    console.log(data.users[1].job);
-    console.log(data.users[2].id);
-    console.log(data.users[2].job);
+    // console.log(data.users[1].id);
+    // console.log(data.users[1].job);
+    // console.log(data.users[2].id);
+    // console.log(data.users[2].job);
 
-    response.render('home', { 
-    
-    // users: data.users,
-    users_data: data.users,
+    response.render('home', {
 
-    can_see_toggle_first:can_see_ternary ? "hidden" : "",
-    can_see_toggle_second:can_see_ternary ? "" : "hidden",
-    status:status,
-    available:status,
-    
-        
+        // users: data.users,
+        users_data: data.users,
+
+        can_see_toggle_first: can_see_ternary ? "hidden" : "",
+        can_see_toggle_second: can_see_ternary ? "" : "hidden",
+        status: status,
+        available: status,
+
+
     })
-    
+
 
     // document.getElementsByTagName("p").innerHTML = "The full URL of this page is:<br>"
     // document.getElementById("demo").innerHTML = "The full URL of this page is:<br>";
@@ -75,33 +75,33 @@ app.get('/:robotName', function (request, response) { // robotName is used below
         // if(item.job == null) {console.log(item);} // Isolated the jobs that are not filled.
         // console.log(item);
         // console.log(item.job);
-        
+
         if (item.username === username) {
             // if(item.username==data.users[i].username){console.log(data.users[i].job);}
             // console.log(item.username);
             // console.log(data.users[i].username);
             // console.log(item.job);
-            if(item.job == "Available for hire."||item.job == null){
-                // console.log("it is null");
-                // console.log(item.job);
-                    response.render('profile_available', { // 'profile' is referenced in profile.mustache
-                        WhatIsThis: item // 'WhatIsThis' is referenced in profile.mustache
-                    })
-                    robot_item = item; // asigning 'data.users[i]' to robot_item. 
+            // if(item.job == "Available for hire."||item.job == null){
+            //     // console.log("it is null");
+            //     // console.log(item.job);
+            //         response.render('profile_available', { // 'profile' is referenced in profile.mustache
+            //             WhatIsThis: item // 'WhatIsThis' is referenced in profile.mustache
+            //         })
+            //         robot_item = item; // asigning 'data.users[i]' to robot_item. 
 
-            }
-            else{
-                // console.log(item.job);
-                response.render('profile', { // 'profile' is referenced in profile.mustache
+            // }
+            // else{
+            // console.log(item.job);
+            response.render('profile', { // 'profile' is referenced in profile.mustache
                 WhatIsThis: item // 'WhatIsThis' is referenced in profile.mustache
-                })
+            })
             robot_item = item; // asigning 'data.users[i]' to robot_item.
-            }
-
-             
         }
-        
+
+
     }
+
+    // }
 
     //  Error Message and Console.log
     if (robot_item === null) {
