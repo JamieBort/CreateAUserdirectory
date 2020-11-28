@@ -13,8 +13,9 @@ From [The Iron Yard](https://newline.theironyard.com/cohorts/15/courses/10/proje
 - [ ] 4. Clean up the comments and unneeded code. **Use the cleanup branch for this.** It has not yet been created.
 - [ ] 5. Clean up the /public/css/style.css file. **Use the cleanup branch for this.** It has not yet been created.
 - [ ] 6. Remove the /public/css/copy_style.css, /views/copy_profile.mustache, /views/copy_profile_available. **Use the cleanup branch for this.** It has not yet been created.
-- [X] 7. Remove the 'old' directory.
-- [ ] 8. Update gh-pages.
+- [ ] 7. Update the README.md with the Heroku link.
+- [X] 8. Remove the 'old' directory.
+- [ ] 9. Update gh-pages.
 
 ## Create a user directory
 Given a file of user data, create a directory of users.
