@@ -1,5 +1,8 @@
 # Create a User Directory
 
+Thinking about using MongoDB for this. Made note of some resources here:
+https://trello.com/c/ktGFT1wU/795-mongodb-master-card
+
 ### To use this repo
 In Terminal in the root directory run `npm install`.
 Then run `nodemon main.js`.
