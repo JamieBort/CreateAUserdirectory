@@ -3,7 +3,11 @@
 See the assignment.md file for what the end product needs to look like.
 
 ## Status
-About to create a `host` branch to work on the first to-do item below.
+Tabling this for now. Having trouble with getting it hosted on Netlify.
+Going to attempt to host a trivial file/app/program on Netlify via: `https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Netlify`. 
+Then will come back to this.
+
+~~About to create a `host` branch to work on the first to-do item below.~~ **Done**.
 
 ## To-Do
 - [ ] Host this project on Netlify. See: https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Netlify
