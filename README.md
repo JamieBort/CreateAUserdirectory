@@ -39,5 +39,10 @@ See the [Create A User Directory](https://docs.google.com/document/d/1q-ZE0Q0Si-
 
 ### Associated Links
 
+file structure
++-- Master
+    +-- dev
+        +-- feature branch
+
 ## ~~To-Do~~
 ~~See the `ToDo.md` file~~.
