@@ -24,7 +24,7 @@ Then run `nodemon main.js`.
 * views/ - [to be filled in later]
 
 ### Files
-* Assignment.md - [to be filled in later]
+* Assignment.md - The file outlining what needs to be done. It's the original assignment.
 * data.js - [to be filled in later]
 * main.js - [to be filled in later]
 * package-lock.json - [to be filled in later]
