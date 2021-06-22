@@ -3,12 +3,10 @@
 See the assignment.md file for what the end product needs to look like.
 
 ## Status
-About to create a `refactor` branch to work on the first to-do item below.
+~~About to create a `refactor` branch to work on the first to-do item below.~~ **Done**.
+
 
 ## To-Do
-- [ ] Move files around such that
-  * Move the `images/` directory and the `Assignment.md` file into the `SourceFiles` directory.
-  * add a `SourceFiles/README.md` file and add a `Directory and Files` section to it.
 - [ ] Host this project on Netlify. See: https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Netlify
 - [ ] 1. Add code so that the url is displayed on the page; either with innerHTML and/or using window.location.href. See the [Node JS Tutorial for Beginners #25 - Template Engines](https://www.youtube.com/watch?v=oZGmHNZv7Sc) YouTube video to accomplish that. **Use a unique branch for this.**
 - [ ] 2. Come back to identify what is the model, what is the view, and what is the controllor.
@@ -24,3 +22,6 @@ About to create a `refactor` branch to work on the first to-do item below.
 - [X] 8. Remove the 'old' directory.
 - [ ] 9. Find out if `gh-pages` is still a thing. If it isn't delete that branch.
 - [ ] 10. Update gh-pages.
+- [X] Move files around such that
+  * Move the `images/` directory and the `Assignment.md` file into the `SourceFiles` directory.
+  * add a `SourceFiles/README.md` file and add a `Directory and Files` section to it.

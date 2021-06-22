@@ -17,22 +17,22 @@ Then run `nodemon main.js`.
 
 ## Directories and Files
 ### Directories
-* images/ - [to be filled in later]
-* node_modules/ - [to be filled in later]
-* public/ - [to be filled in later]
-* SourceFiles/ - [to be filled in later]
-* views/ - [to be filled in later]
+* `images/` - [to be filled in later]
+* `node_modules/` - [to be filled in later]
+* `public/` - [to be filled in later]
+* `SourceFiles/` - [to be filled in later]
+* `views/` - [to be filled in later]
 
 ### Files
-* Assignment.md - The file outlining what needs to be done. It's the original assignment.
-* data.js - [to be filled in later]
-* main.js - [to be filled in later]
-* package-lock.json - [to be filled in later]
-* package.json - [to be filled in later]
-* Progress.md
+* `Assignment.md` - The file outlining what needs to be done. It's the original assignment.
+* `data.js` - [to be filled in later]
+* `main.js` - [to be filled in later]
+* `package-lock.json` - [to be filled in later]
+* `package.json` - [to be filled in later]
+* `Progress.md`
     * For my personal organization.
     * Contains `Next Steps`, `Status`, `Tasks`, and `Associated Links` sections.
-* README.md - [to be filled in later]
+* `README.md` - This readme file.
 
 ### Resources
 See the [Create A User Directory](https://docs.google.com/document/d/1q-ZE0Q0Si-YTMIl12HzOczL3DMyiyv6Zbr45xVkIndU/edit#) Google Drive doc for resources.
@@ -40,9 +40,7 @@ See the [Create A User Directory](https://docs.google.com/document/d/1q-ZE0Q0Si-
 ### Associated Links
 
 file structure
-+-- Master
-    +-- dev
-        +-- feature branch
 
-## ~~To-Do~~
-~~See the `ToDo.md` file~~.
+    +-- Master
+        +-- dev
+            +-- feature branch
