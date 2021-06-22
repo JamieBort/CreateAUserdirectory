@@ -5,9 +5,6 @@ See the assignment.md file for what the end product needs to look like.
 ## Status
 About to create a `host` branch to work on the first to-do item below.
 
-~~About to create a `refactor` branch to work on the first to-do item below.~~ **Done**.
-
-
 ## To-Do
 - [ ] Host this project on Netlify. See: https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Netlify
 - [ ] 1. Add code so that the url is displayed on the page; either with innerHTML and/or using window.location.href. See the [Node JS Tutorial for Beginners #25 - Template Engines](https://www.youtube.com/watch?v=oZGmHNZv7Sc) YouTube video to accomplish that. **Use a unique branch for this.**
