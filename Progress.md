@@ -3,6 +3,8 @@
 See the assignment.md file for what the end product needs to look like.
 
 ## Status
+About to create a `host` branch to work on the first to-do item below.
+
 ~~About to create a `refactor` branch to work on the first to-do item below.~~ **Done**.
 
 
