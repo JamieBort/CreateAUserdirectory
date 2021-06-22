@@ -22,4 +22,5 @@ About to create a `refactor` branch to work on the first to-do item below.
 - [ ] 6. Remove the /public/css/copy_style.css, /views/copy_profile.mustache, /views/copy_profile_available. **Use the cleanup branch for this.** It has not yet been created.
 - [ ] 7. Update the README.md with the Heroku [link](https://vast-island-13423.herokuapp.com/).
 - [X] 8. Remove the 'old' directory.
-- [ ] 9. Update gh-pages.
+- [ ] 9. Find out if `gh-pages` is still a thing. If it isn't delete that branch.
+- [ ] 10. Update gh-pages.
