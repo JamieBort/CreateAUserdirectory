@@ -3,7 +3,13 @@
 See the assignment.md file for what the end product needs to look like.
 
 ## Status
-Tabling this for now. Having trouble with getting it hosted on Netlify.
+Changed to the `dev` branch. 
+Merged in the `host` branch.
+Going to change back to the `host` branch. 
+And then wipe it clean such that I can get Netlify working (Maybe move everything into an `old` directory. Or `temp` directory.)
+Then going to follow a tutorial and/or the documentation to get Netlify working.
+
+In the `host` branch. Tabling this for now. Having trouble with getting it hosted on Netlify.
 Going to attempt to host a trivial file/app/program on Netlify via: `https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Netlify`. 
 Then will come back to this.
 
