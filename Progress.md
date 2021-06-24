@@ -17,6 +17,7 @@ Currently in the `dev` branch.
   - [ ] 6. Remove the `/public/css/copy_style.css`, `/views/copy_profile.mustache`, `/views/copy_profile_available` files.
   - [ ] Clean up the  `README.md` file.
   - [ ] Update gh-pages or delete the branch. (`git branch -d gh-pages` & `git push origin --delete gh-pages` from https://trello.com/c/XZXUcEjo/757-read-up-on-deleting-old-github-branches)
+  - [ ] Assess whether to keep the files in the `new_temp/` directory. Then delete the `new_temp/` directory.
 
 * coding
   - [ ] Create an `error` page such that `response.render('error', {})` is used in the `main.js` file. Rather than the `response.status(404).send()` method that is currently being used.
