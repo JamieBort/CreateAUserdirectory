@@ -3,7 +3,9 @@
 See the `SourceFiles/assignment.md` file for what the end product needs to look like.
 
 ## Status
-Currently in the `error_page` branch.
+Currently in the `dev` branch.
+
+Removed the `copy_main.js` file, the `index.html` file, the `new_temp/README.md` file, the `new_temp/copy_profile.mustache` file, the new_temp/copy_profile_available.mustache' file, the 'public/css/copy_style.css` file, and the `public/css/old/copy_style.css` file.
 
 ~~About to create an `error` page to replace the `response.status(404).send()` method in the `main.js` file. 
 `copy_main.js` is a copy of `main.js`.
