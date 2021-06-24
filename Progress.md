@@ -3,13 +3,15 @@
 See the `SourceFiles/assignment.md` file for what the end product needs to look like.
 
 ## Status
-Currently in the `heroku` branch. 
+Currently in the `dev` branch. 
 
-Working with `heroku` now:
+Going to create and switch to the `url` branch to work on displaying the url on the page.
+
+~~Working with `heroku` now:~~
 - https://dashboard.heroku.com/apps/create-a-user-directory
 - https://create-a-user-directory.herokuapp.com/
 
-Netlify didn't work out.
+~~Netlify didn't work out.~~
 
 ~~Changed to the `dev` branch. 
 Merged in the `host` branch.
@@ -24,9 +26,9 @@ Then will come back to this.~~
 ~~About to create a `host` branch to work on the first to-do item below.~~ **Done**.
 
 ## To-Do
-- [ ] Host this project on Netlify. See: https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Netlify
 - [ ] 1. Add code so that the url is displayed on the page; either with innerHTML and/or using window.location.href. See the [Node JS Tutorial for Beginners #25 - Template Engines](https://www.youtube.com/watch?v=oZGmHNZv7Sc) YouTube video to accomplish that. **Use a unique branch for this.**
-- [ ] 2. Come back to identify what is the model, what is the view, and what is the controllor.
+  * Use `url` as a branch name.
+- [ ] 2. Come back to identify what is the model, what is the view, and what is the controller.
 - [ ] 3. Make the style look like the mockup. **Use a unique branch for this.**
   - [ ] 3a. The "Available for hire" needs to be in red. (For this, see: https://github.com/takaides/robotUsers)
   - [ ] 3b. The way the skills are listed do not match the way they're listed in the mockup.
@@ -44,5 +46,6 @@ Then will come back to this.~~
   * add a `SourceFiles/README.md` file and add a `Directory and Files` section to it.
 - [ ] Change the name of the `CreateAUserdirectory` repo to `CreateAUserDirectory`.
 - [ ] Clean up the  `README.md` file.
-- [ ] Remove/delete the `temp/` directory.
-- [ ] Delete the `host` branch.
+- [X] Remove/delete the `temp/` directory.
+- [X] Delete the `host` branch.
+- [ ] ~~Host this project on Netlify. See: https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Netlify~~ This didn't work out.
