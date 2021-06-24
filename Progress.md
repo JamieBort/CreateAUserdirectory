@@ -18,7 +18,7 @@ Currently in the `dev` branch.
     * to the desktop design
     * to the mobile design
       * The h1 needs to be bigger.
-      
+
     * Make the style look like the mockup.
       * The "Available for hire" needs to be in red. (For this, see: https://github.com/takaides/robotUsers)
       * The way the skills are listed do not match the way they're listed in the mockup.
@@ -26,7 +26,7 @@ Currently in the `dev` branch.
 
 * coding
   * Create an `error` page such that `response.render('error', {})` is used in the `main.js` file. Rather than the `response.status(404).send()` method that is currently being used.
-  * Set this up to pull from a database now. Is this already happening in another repo? Find it.
+  * Set this up to pull from a database now. Is this already happening in another repo? Find it. This might be it: https://github.com/JamieBort/ReturnToRobots
 
 ## Completed
 - [X] Remove/delete the `temp/` directory.
