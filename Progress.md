@@ -3,9 +3,7 @@
 See the `SourceFiles/assignment.md` file for what the end product needs to look like.
 
 ## Status
-Currently in the `dev` branch. 
-
-~~Going to create and switch to the `url` branch to work on displaying the url on the page.~~
+Currently in the `dev` branch.
 
 ## To-Do
 * styling/content
@@ -17,7 +15,6 @@ Currently in the `dev` branch.
   - [ ] 4. Clean up the comments and unneeded code.
   - [ ] 5. Clean up the `/public/css/style.css` file.
   - [ ] 6. Remove the `/public/css/copy_style.css`, `/views/copy_profile.mustache`, `/views/copy_profile_available` files.
-  - [ ] Change the name of the `CreateAUserdirectory` repo to `CreateAUserDirectory`. Better yet, change it to `Create A User Directory`.
   - [ ] Clean up the  `README.md` file.
   - [ ] Update gh-pages or delete the branch. (`git branch -d gh-pages` & `git push origin --delete gh-pages` from https://trello.com/c/XZXUcEjo/757-read-up-on-deleting-old-github-branches)
 
@@ -39,3 +36,4 @@ Currently in the `dev` branch.
   - [ ] 10. ~~Update gh-pages.~~ gh-pages will no longer suffice for this repo on account of using Node. gh-pages serves only static sites.
   - [ ] 9. ~~Find out if `gh-pages` is still a thing. If it isn't delete that branch.~~ It is still a thing. However, it will no longer suffice for this repo on account of using Node. gh-pages serves only static sites.
   - [ ] ~~"Push" the `main.js` file data to the `index.html` file. Use `git push origin <branch current name pushing from>:gh-pages` to do this. So that gh-pages will work. If this works, then I wont need `https://dashboard.heroku.com/apps/create-a-user-directory` until a database is used.~~ gh-pages will no longer suffice for this repo on account of using Node. gh-pages serves only static sites.
+  - [X] Change the name of the `CreateAUserdirectory` repo to `CreateAUserDirectory`. Better yet, change it to `Create A User Directory`. Done. Changed it to `Create A User Directory`.
