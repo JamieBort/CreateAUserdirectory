@@ -7,6 +7,8 @@ Or by running it locally:
 
 The dashboard for this app can be found here: https://dashboard.heroku.com/apps/create-a-user-directory
 
+gh-pages url: https://jamiebort.github.io/CreateAUserdirectory/
+
 
 ## Who
 ## What
