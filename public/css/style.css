@@ -362,14 +362,17 @@ body {
 /* On screens that are 600px or less, set the background color to olive */
 
 @media (max-width: 1000px) {
+/* @media (max-width: 1000px) { */
     body {
-        /* background-color: lightcyan; */
+        background-color: lightcyan;
     }
     h1 {}
 
 /* Styles for Home Page/home.mustache file. */
     .rows {}
     .profiles {
+        background-color: lightcoral;
+        width: 80%;
         /* width: 25em; */
     }
     .profile_img {
@@ -380,7 +383,7 @@ body {
         /* font-size: 2em; */
     }
     .profile_span {
-        /* font-size: 2em; */
+        font-size: 2em;
     }
 
 
