@@ -5,7 +5,9 @@ See the `SourceFiles/assignment.md` file for what the end product needs to look 
 ## Status
 Currently in the `error_page` branch.
 
-About to create an `error` page to replace the `response.status(404).send()` method in the `main.js` file. 
+~~About to create an `error` page to replace the `response.status(404).send()` method in the `main.js` file. 
+`copy_main.js` is a copy of `main.js`.
+`views/error.mustache` is a copy of `views/profile.mustache`.~~ This is complete.
 
 ## To-Do
 * styling/content mockup. Among the changes that are needed are the font size. 
@@ -27,7 +29,6 @@ About to create an `error` page to replace the `response.status(404).send()` met
       * The mobile version of the profile page doesn't match the mockup. make the mobile version match the 
 
 * coding
-  * Create an `error` page such that `response.render('error', {})` is used in the `main.js` file. Rather than the `response.status(404).send()` method that is currently being used.
   * Set this up to pull from a database now. Is this already happening in another repo? Find it. This might be it: https://github.com/JamieBort/ReturnToRobots
 
 ## Completed
@@ -41,8 +42,9 @@ About to create an `error` page to replace the `response.status(404).send()` met
 - [X] 1. Add code so that the url is displayed on the page; either with innerHTML and/or using window.location.href. See the [Node JS Tutorial for Beginners #25 - Template Engines](https://www.youtube.com/watch?v=oZGmHNZv7Sc) YouTube video to accomplish that. Use a unique branch for this.
   * Use `url` as a branch name.
 - [X] 2. Come back to identify what is the model, what is the view, and what is the controller. See `/LearningDirectory/SoftwareDesignPatterns/MVC/`. `data.js` is the model. `home.mustache` is a view. `profile. `main.js` is the controller.mustache` is a view.
-  - [X] 7. Update the README.md with the Heroku [link](https://vast-island-13423.herokuapp.com/).
-  - [ ] 10. ~~Update gh-pages.~~ gh-pages will no longer suffice for this repo on account of using Node. gh-pages serves only static sites.
-  - [ ] 9. ~~Find out if `gh-pages` is still a thing. If it isn't delete that branch.~~ It is still a thing. However, it will no longer suffice for this repo on account of using Node. gh-pages serves only static sites.
-  - [ ] ~~"Push" the `main.js` file data to the `index.html` file. Use `git push origin <branch current name pushing from>:gh-pages` to do this. So that gh-pages will work. If this works, then I wont need `https://dashboard.heroku.com/apps/create-a-user-directory` until a database is used.~~ gh-pages will no longer suffice for this repo on account of using Node. gh-pages serves only static sites.
-  - [X] Change the name of the `CreateAUserdirectory` repo to `CreateAUserDirectory`. Better yet, change it to `Create A User Directory`. Done. Changed it to `Create A User Directory`.
+- [X] 7. Update the README.md with the Heroku [link](https://vast-island-13423.herokuapp.com/).
+- [ ] 10. ~~Update gh-pages.~~ gh-pages will no longer suffice for this repo on account of using Node. gh-pages serves only static sites.
+- [ ] 9. ~~Find out if `gh-pages` is still a thing. If it isn't delete that branch.~~ It is still a thing. However, it will no longer suffice for this repo on account of using Node. gh-pages serves only static sites.
+- [ ] ~~"Push" the `main.js` file data to the `index.html` file. Use `git push origin <branch current name pushing from>:gh-pages` to do this. So that gh-pages will work. If this works, then I wont need `https://dashboard.heroku.com/apps/create-a-user-directory` until a database is used.~~ gh-pages will no longer suffice for this repo on account of using Node. gh-pages serves only static sites.
+- [X] Change the name of the `CreateAUserdirectory` repo to `CreateAUserDirectory`. Better yet, change it to `Create A User Directory`. Done. Changed it to `Create A User Directory`.
+* Create an `error` page such that `response.render('error', {})` is used in the `main.js` file. Rather than the `response.status(404).send()` method that is currently being used.

@@ -103,19 +103,11 @@ app.get('/:robotName', function (request, response) { // robotName is used below
 
     //  Error Message and Console.log
     if (robot_item === null) {
-
-
-            // NOTE: See notes above about the render() method.
-            response.render('error', { // 'profile' is referenced in profile.mustache
-                // profile_item: item // 'profile_item' is referenced in profile.mustache
-                username:username,
-            })
-
-        // response.setHeader('Content-type','text/html')
-        // response.status(404).send(`<p>${username}`+ ' is not found.</p><a class="home_a" href="/">Return to the Robot Employee Database</a>');
+        response.setHeader('Content-type','text/html')
+        response.status(404).send(`<p>${username}`+ ' is not found.</p><a class="home_a" href="/">Return to the Robot Employee Database</a>');
         
         console.log(`${username}`+ ' is not in the data.js file.');
-        // return;
+        return;
     }
 
 
