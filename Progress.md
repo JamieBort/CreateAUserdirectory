@@ -3,10 +3,12 @@
 See the `SourceFiles/assignment.md` file for what the end product needs to look like.
 
 ## Status
-Currently in the `dev` branch.
+Currently in the `error_page` branch.
+
+About to create an `error` page to replace the `response.status(404).send()` method in the `main.js` file. 
 
 ## To-Do
-* styling/contentmockup. Among the changes that are needed are the font size. 
+* styling/content mockup. Among the changes that are needed are the font size. 
     - [ ] 3d. The mobile version of the home page doesn't exist. Make the mobile version of the home page.mustache, and the /views/profile.mustache files.
   - [ ] 4. Clean up the comments and unneeded code.
   - [ ] 5. Clean up the `/public/css/style.css` file.
