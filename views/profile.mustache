@@ -10,10 +10,10 @@
 
 <body>
   <h1 class="user_page_title">USER</h1>
-  <a class="home_a" href="/">Return to Home Page</a>
+  <a class="home_a" href="/">Return to the Robot Employee Database</a>
   <div class="users_outer_div users">
-    {{#WhatIsThis}}
-
+    {{#profile_item}}
+        <h2><b>The URL:</b><a href="http://localhost:5000/{{username}}">localhost:5000/{{username}}</a> </h2>
     <div class="user_top_div">
       <img class="user_img radius" src= {{avatar}}>
       <span class="user_span">
@@ -34,7 +34,7 @@
         
     </div>
 
-      {{/WhatIsThis}}
+      {{/profile_item}}
   </div>
 </body>
 </html>
