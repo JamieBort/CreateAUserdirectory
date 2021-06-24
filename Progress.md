@@ -7,24 +7,6 @@ Currently in the `dev` branch.
 
 Going to create and switch to the `url` branch to work on displaying the url on the page.
 
-~~Working with `heroku` now:~~
-- https://dashboard.heroku.com/apps/create-a-user-directory
-- https://create-a-user-directory.herokuapp.com/
-
-~~Netlify didn't work out.~~
-
-~~Changed to the `dev` branch. 
-Merged in the `host` branch.
-Going to change back to the `host` branch. 
-And then wipe it clean such that I can get Netlify working (Maybe move everything into an `old` directory. Or `temp` directory.)
-Then going to follow a tutorial and/or the documentation to get Netlify working.~~
-
-~~In the `host` branch. Tabling this for now. Having trouble with getting it hosted on Netlify.
-Going to attempt to host a trivial file/app/program on Netlify via: `https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Netlify`. 
-Then will come back to this.~~
-
-~~About to create a `host` branch to work on the first to-do item below.~~ **Done**.
-
 ## To-Do
 - [ ] 1. Add code so that the url is displayed on the page; either with innerHTML and/or using window.location.href. See the [Node JS Tutorial for Beginners #25 - Template Engines](https://www.youtube.com/watch?v=oZGmHNZv7Sc) YouTube video to accomplish that. **Use a unique branch for this.**
   * Use `url` as a branch name.
