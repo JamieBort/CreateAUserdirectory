@@ -3,9 +3,9 @@
 See the `SourceFiles/assignment.md` file for what the end product needs to look like.
 
 ## Status
-Currently in the `url` branch. 
+Currently in the `dev` branch. 
 
-Going to create and switch to the `url` branch to work on displaying the url on the page.
+~~Going to create and switch to the `url` branch to work on displaying the url on the page.~~
 
 ## To-Do
 - [ ] 3. Make the style look like the mockup.
