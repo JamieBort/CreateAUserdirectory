@@ -6,11 +6,7 @@ See the `SourceFiles/assignment.md` file for what the end product needs to look 
 Currently in the `dev` branch.
 
 ## To-Do
-* styling/content
-  - [ ] 3. Make the style look like the mockup.
-    - [ ] 3a. The "Available for hire" needs to be in red. (For this, see: https://github.com/takaides/robotUsers)
-    - [ ] 3b. The way the skills are listed do not match the way they're listed in the mockup.
-    - [ ] 3c. The mobile version of the profile page doesn't match the mockup. make the mobile version match the mockup. Among the changes that are needed are the font size. 
+* styling/contentmockup. Among the changes that are needed are the font size. 
     - [ ] 3d. The mobile version of the home page doesn't exist. Make the mobile version of the home page.mustache, and the /views/profile.mustache files.
   - [ ] 4. Clean up the comments and unneeded code.
   - [ ] 5. Clean up the `/public/css/style.css` file.
@@ -18,9 +14,19 @@ Currently in the `dev` branch.
   - [ ] Clean up the  `README.md` file.
   - [ ] Update gh-pages or delete the branch. (`git branch -d gh-pages` & `git push origin --delete gh-pages` from https://trello.com/c/XZXUcEjo/757-read-up-on-deleting-old-github-branches)
   - [ ] Assess whether to keep the files in the `new_temp/` directory. Then delete the `new_temp/` directory.
+  * aesthetic changes to make
+    * to the desktop design
+    * to the mobile design
+      * The h1 needs to be bigger.
+      
+    * Make the style look like the mockup.
+      * The "Available for hire" needs to be in red. (For this, see: https://github.com/takaides/robotUsers)
+      * The way the skills are listed do not match the way they're listed in the mockup.
+      * The mobile version of the profile page doesn't match the mockup. make the mobile version match the 
 
 * coding
-  - [ ] Create an `error` page such that `response.render('error', {})` is used in the `main.js` file. Rather than the `response.status(404).send()` method that is currently being used.
+  * Create an `error` page such that `response.render('error', {})` is used in the `main.js` file. Rather than the `response.status(404).send()` method that is currently being used.
+  * Set this up to pull from a database now. Is this already happening in another repo? Find it.
 
 ## Completed
 - [X] Remove/delete the `temp/` directory.
