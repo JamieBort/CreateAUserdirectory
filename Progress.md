@@ -1,17 +1,25 @@
 # Progress
 
-See the assignment.md file for what the end product needs to look like.
+See the `SourceFiles/assignment.md` file for what the end product needs to look like.
 
 ## Status
-Changed to the `dev` branch. 
+Currently in the `heroku` branch. 
+
+Working with `heroku` now:
+- https://dashboard.heroku.com/apps/create-a-user-directory
+- https://create-a-user-directory.herokuapp.com/
+
+Netlify didn't work out.
+
+~~Changed to the `dev` branch. 
 Merged in the `host` branch.
 Going to change back to the `host` branch. 
 And then wipe it clean such that I can get Netlify working (Maybe move everything into an `old` directory. Or `temp` directory.)
-Then going to follow a tutorial and/or the documentation to get Netlify working.
+Then going to follow a tutorial and/or the documentation to get Netlify working.~~
 
-In the `host` branch. Tabling this for now. Having trouble with getting it hosted on Netlify.
+~~In the `host` branch. Tabling this for now. Having trouble with getting it hosted on Netlify.
 Going to attempt to host a trivial file/app/program on Netlify via: `https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Netlify`. 
-Then will come back to this.
+Then will come back to this.~~
 
 ~~About to create a `host` branch to work on the first to-do item below.~~ **Done**.
 
@@ -34,3 +42,7 @@ Then will come back to this.
 - [X] Move files around such that
   * Move the `images/` directory and the `Assignment.md` file into the `SourceFiles` directory.
   * add a `SourceFiles/README.md` file and add a `Directory and Files` section to it.
+- [ ] Change the name of the `CreateAUserdirectory` repo to `CreateAUserDirectory`.
+- [ ] Clean up the  `README.md` file.
+- [ ] Remove/delete the `temp/` directory.
+- [ ] Delete the `host` branch.

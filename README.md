@@ -1,5 +1,13 @@
 # Create a User Directory
 
+This program can be found by navigating to https://create-a-user-directory.herokuapp.com/
+
+Or by running it locally:
+[instructions for running locally]
+
+The dashboard for this app can be found here: https://dashboard.heroku.com/apps/create-a-user-directory
+
+
 ## Who
 ## What
 ## When
