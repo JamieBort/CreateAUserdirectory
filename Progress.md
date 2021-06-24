@@ -20,14 +20,14 @@ Going to create and switch to the `url` branch to work on displaying the url on 
 - [ ] 5. Clean up the /public/css/style.css file. **Use the cleanup branch for this.** It has not yet been created.
 - [ ] 6. Remove the /public/css/copy_style.css, /views/copy_profile.mustache, /views/copy_profile_available. **Use the cleanup branch for this.** It has not yet been created.
 - [ ] 7. Update the README.md with the Heroku [link](https://vast-island-13423.herokuapp.com/).
-- [X] 8. Remove the 'old' directory.
 - [ ] 9. Find out if `gh-pages` is still a thing. If it isn't delete that branch.
 - [ ] 10. Update gh-pages.
-- [X] Move files around such that
-  * Move the `images/` directory and the `Assignment.md` file into the `SourceFiles` directory.
-  * add a `SourceFiles/README.md` file and add a `Directory and Files` section to it.
 - [ ] Change the name of the `CreateAUserdirectory` repo to `CreateAUserDirectory`.
 - [ ] Clean up the  `README.md` file.
 - [X] Remove/delete the `temp/` directory.
 - [X] Delete the `host` branch.
 - [ ] ~~Host this project on Netlify. See: https://github.com/JamieBort/LearningDirectory/tree/master/Hosting/Netlify~~ This didn't work out.
+- [X] Move files around such that
+  * Move the `images/` directory and the `Assignment.md` file into the `SourceFiles` directory.
+  * add a `SourceFiles/README.md` file and add a `Directory and Files` section to it.
+- [X] 8. Remove the 'old' directory.
