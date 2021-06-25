@@ -26,12 +26,19 @@ Removed the `copy_main.js` file, the `index.html` file, the `new_temp/README.md`
       * The h1 needs to be bigger.
 
     * Make the style look like the mockup.
-      * The "Available for hire" needs to be in red. (For this, see: https://github.com/takaides/robotUsers)
+      * The "Available for hire" needs to be in [red](https://github.com/JamieBort/Create-A-User-Directory/blob/dev/SourceFiles/images/9fd60d22-index.png) and [here](https://github.com/JamieBort/Create-A-User-Directory/blob/dev/SourceFiles/images/bd740831-user3.png). (For this, see: https://github.com/takaides/robotUsers)
       * The way the skills are listed do not match the way they're listed in the mockup.
       * The mobile version of the profile page doesn't match the mockup. make the mobile version match the 
+      * In the `home.mustache` file, make the name of the person/robot match the [mockup](https://github.com/JamieBort/Create-A-User-Directory/blob/dev/SourceFiles/images/9fd60d22-index.png).
 
 * coding
-  * Set this up to pull from a database now. Is this already happening in another repo? Find it. This might be it: https://github.com/JamieBort/ReturnToRobots
+  * Set this up to pull from a database now. Is this already happening in another repo? Find it. This might be it: https://github.com/JamieBort/ReturnToRobots 
+  
+    Also see the [Descriptions of the Return to Robots program](https://docs.google.com/document/d/1q-ZE0Q0Si-YTMIl12HzOczL3DMyiyv6Zbr45xVkIndU/edit#heading=h.tao3rvkzla2h) section of this document.
+  * If the data is `null` in the data.js file, 
+    * have it display `Data not available` or something like that in the `profile.mustache` file.
+    * or omit the title so the file looks okay. For example, if the data is missing for the `Education:` info, do not display `Education:`.
+  * In the `home.mustache` file, when available for hire, omit the `Position:` and `Company:`.
 
 ## Completed
 - [X] Remove/delete the `temp/` directory.
